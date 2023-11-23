@@ -105,20 +105,20 @@
     <div id="puzzle1">
         <p>Вопрос: Как меня зовут?</p>
         <input type="text" id="answer1">
+        <button onclick="checkAnswer()">Проверить</button>
     </div>
 
     <div id="puzzle2">
         <p>Вопрос: Какой у меня ник в Instagram?</p>
         <input type="text" id="answer2">
+        <button onclick="checkAnswer()">Проверить</button>
     </div>
 
     <div id="puzzle3">
         <p>Вопрос: Кто для меня самая красивая девушка на свете?</p>
         <input type="text" id="answer3">
+        <button onclick="checkAnswer()">Проверить</button>
     </div>
-
-    <!-- Общая кнопка Проверить -->
-    <button onclick="checkAnswers()">Проверить</button>
 
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
@@ -129,7 +129,7 @@
     </div>
 
     <script>
-        function checkAnswers() {
+        function checkAnswer() {
             let answer1 = document.getElementById('answer1').value.trim().toLowerCase();
             let answer2 = document.getElementById('answer2').value.trim().toLowerCase();
             let answer3 = document.getElementById('answer3').value.trim().toLowerCase();
